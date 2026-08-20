@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Maggi Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+        }
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="selection:bg-amber-500 selection:text-black">
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 gradient-text">Gourmet Maggi Lab</h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">Elevating the humble instant noodle into a culinary experience. Four creative recipes to redefine your pantry staple.</p>
+        </header>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Recipe 1 -->
+            <article class="glass rounded-3xl p-6 recipe-card">
+                <img src='https://opal.google/board/blobs/2938cb1b-86be-4282-a954-7bb92345c34e' alt='Street-Style Vegetable Masala Maggi' class="w-full h-64 object-cover rounded-2xl mb-6 shadow-xl" />
+                <h2 class="text-2xl font-bold text-amber-400 mb-4">1. Street-Style Vegetable Masala Maggi</h2>
+                <p class="text-sm text-gray-300 mb-6">A classic street food favorite, packed with fresh vegetables and warm spices.</p>
+                <div class="space-y-4">
+                    <details class="group">
+                        <summary class="cursor-pointer font-semibold text-white p-2 bg-white/5 rounded-lg">View Ingredients & Method</summary>
+                        <div class="mt-4 pl-4 border-l-2 border-amber-500 text-sm leading-relaxed text-gray-400 space-y-2">
+                            <p><strong>Ingredients:</strong> 1 pkt Maggi, 1.5c water, onion, tomato, peas, green chili, turmeric, chili powder, oil, coriander.</p>
+                            <p><strong>Method:</strong> Sauté veggies and spices. Boil water, add noodles and tastemaker. Cook until thick, garnish with coriander.</p>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <!-- Recipe 2 -->
+            <article class="glass rounded-3xl p-6 recipe-card">
+                <img src='https://opal.google/board/blobs/c3448390-dae1-46a1-b612-58ccb5256248' alt='Crispy Maggi Pakora Fritters' class="w-full h-64 object-cover rounded-2xl mb-6 shadow-xl" />
+                <h2 class="text-2xl font-bold text-amber-400 mb-4">2. Crispy Maggi Pakora Fritters</h2>
+                <p class="text-sm text-gray-300 mb-6">Crunchy, golden-brown fritters perfect for a rainy afternoon snack.</p>
+                <div class="space-y-4">
+                    <details class="group">
+                        <summary class="cursor-pointer font-semibold text-white p-2 bg-white/5 rounded-lg">View Ingredients & Method</summary>
+                        <div class="mt-4 pl-4 border-l-2 border-amber-500 text-sm leading-relaxed text-gray-400 space-y-2">
+                            <p><strong>Ingredients:</strong> 2 pkts Maggi, gram flour, rice flour, onion, cabbage, ginger-garlic paste, ajwain, chaat masala.</p>
+                            <p><strong>Method:</strong> Boil noodles (al dente). Mix with all ingredients and flour. Fry spoonfuls until golden and crispy.</p>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <!-- Recipe 3 -->
+            <article class="glass rounded-3xl p-6 recipe-card">
+                <img src='https://opal.google/board/blobs/18395895-69a1-4d6e-b7d7-756f52db51ca' alt='Garlic Butter Cheese-Burst Maggi' class="w-full h-64 object-cover rounded-2xl mb-6 shadow-xl" />
+                <h2 class="text-2xl font-bold text-amber-400 mb-4">3. Garlic Butter Cheese-Burst Maggi</h2>
+                <p class="text-sm text-gray-300 mb-6">A decadent, creamy infusion of garlic butter and melted mozzarella.</p>
+                <div class="space-y-4">
+                    <details class="group">
+                        <summary class="cursor-pointer font-semibold text-white p-2 bg-white/5 rounded-lg">View Ingredients & Method</summary>
+                        <div class="mt-4 pl-4 border-l-2 border-amber-500 text-sm leading-relaxed text-gray-400 space-y-2">
+                            <p><strong>Ingredients:</strong> 1 pkt Maggi, 1c water, 0.5c milk, 2tbsp butter, garlic, mozzarella, oregano, chili flakes.</p>
+                            <p><strong>Method:</strong> Sauté garlic in butter. Add water, noodles, and tastemaker. Add milk once reduced. Top with cheese and spices, cover until melted.</p>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <!-- Recipe 4 -->
+            <article class="glass rounded-3xl p-6 recipe-card">
+                <img src='https://opal.google/board/blobs/2829054e-1b72-4883-960c-04451b7e6e4a' alt='Spicy Schezwan Maggi Stir-Fry' class="w-full h-64 object-cover rounded-2xl mb-6 shadow-xl" />
+                <h2 class="text-2xl font-bold text-amber-400 mb-4">4. Spicy Schezwan Maggi Stir-Fry</h2>
+                <p class="text-sm text-gray-300 mb-6">High-heat fusion stir-fry combining fiery Schezwan sauce with classic masala.</p>
+                <div class="space-y-4">
+                    <details class="group">
+                        <summary class="cursor-pointer font-semibold text-white p-2 bg-white/5 rounded-lg">View Ingredients & Method</summary>
+                        <div class="mt-4 pl-4 border-l-2 border-amber-500 text-sm leading-relaxed text-gray-400 space-y-2">
+                            <p><strong>Ingredients:</strong> 1 pkt Maggi, oil, carrots, capsicum, spring onion, Schezwan sauce, soy sauce, vinegar, sugar.</p>
+                            <p><strong>Method:</strong> Parboil noodles. Stir-fry aromatics and veggies. Add sauces and noodles, toss on high heat for a smoky char.</p>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <script>
+        // Micro-animation for cards
+        document.querySelectorAll('.recipe-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.borderColor = '#f59e0b';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+            });
+        });
+    </script>
+</body>
+</html>
