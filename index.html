@@ -3,99 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Recipe Collection</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: Arial, sans-serif;
             background: #f8f5f0;
             color: #333;
         }
 
         header {
             text-align: center;
-            padding: 40px 20px;
-            background: #fff;
+            padding: 50px 20px;
+            background: white;
         }
 
         header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 40px;
         }
 
         header p {
+            margin-top: 10px;
             color: #666;
+            font-size: 18px;
         }
 
         .recipes {
             display: flex;
             justify-content: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
 
         .card {
-            width: 300px;
+            width: 330px;
             background: white;
-            border-radius: 15px;
+            border-radius: 18px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
         }
 
         .card img {
             width: 100%;
-            height: 220px;
+            height: 230px;
             object-fit: cover;
+            display: block;
         }
 
         .card-content {
-            padding: 20px;
+            padding: 25px;
             text-align: center;
         }
 
         .card h2 {
-            margin-top: 0;
+            margin: 0 0 10px;
+            font-size: 26px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
         }
 
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            background: #333;
+            margin-top: 15px;
+            padding: 12px 22px;
+            background: #d35400;
             color: white;
             text-decoration: none;
             border-radius: 8px;
+            font-weight: bold;
         }
 
         .button:hover {
-            opacity: 0.8;
+            background: #a04000;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>🍴 My Recipe Collection</h1>
-    <p>Delicious recipes made simple</p>
-</header>
+    <header>
+        <h1>🍴 My Recipe Collection</h1>
+        <p>Delicious recipes made simple</p>
+    </header>
 
-<section class="recipes">
+    <section class="recipes">
 
-<div class="card">
-    <img src="aloo-paratha/aloo-paratha.jpg" alt="Aloo Paratha">
+        <div class="card">
 
-    <div class="card-content">
-        <h2>Aloo Paratha</h2>
+            <!-- Aloo Paratha Image -->
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Aloo_paratha.jpg/640px-Aloo_paratha.jpg"
+                alt="Aloo Paratha"
+            >
 
-        <p>Delicious Indian stuffed potato flatbread.</p>
+            <div class="card-content">
 
-        <a href="aloo-paratha/" class="button">
-            View Recipe →
-        </a>
-    </div>
-</div>
+                <h2>Aloo Paratha</h2>
 
-</section>
+                <p>
+                    Delicious Indian stuffed potato flatbread,
+                    crispy outside and soft inside.
+                </p>
+
+                <a href="aloo-paratha/" class="button">
+                    View Recipe →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 </html>
