@@ -18,22 +18,25 @@
             color: #333;
         }
 
+        /* Header */
         header {
             text-align: center;
-            padding: 45px 20px;
+            padding: 50px 20px;
             background: white;
         }
 
         header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 40px;
         }
 
         header p {
+            margin-top: 12px;
             color: #777;
-            font-size: 17px;
+            font-size: 18px;
         }
 
+        /* Recipe Cards */
         .recipes {
             display: flex;
             justify-content: center;
@@ -47,7 +50,12 @@
             background: white;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         .card img {
@@ -63,18 +71,19 @@
         }
 
         .card h2 {
-            margin: 0 0 10px;
+            margin: 0 0 12px;
             font-size: 28px;
         }
 
         .card p {
             color: #666;
-            line-height: 1.5;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
+        /* Button */
         .button {
             display: inline-block;
-            margin-top: 15px;
             padding: 12px 24px;
             background: #d35400;
             color: white;
@@ -86,66 +95,100 @@
         .button:hover {
             background: #a04000;
         }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            color: #777;
+            margin-top: 30px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>🍴 My Recipe Collection</h1>
-    <p>Delicious recipes made simple</p>
-</header>
+    <!-- Header -->
+    <header>
+        <h1>🍴 My Recipe Collection</h1>
+        <p>Delicious recipes made simple</p>
+    </header>
 
-<section class="recipes">
 
-    <div class="card">
+    <!-- Recipes -->
+    <section class="recipes">
 
-        <img
-            src="https://images.pexels.com/photos/20408462/pexels-photo-20408462.jpeg"
-            alt="Aloo Paratha"
-        >
+        <!-- Aloo Paratha -->
+        <div class="card">
 
-        <div class="card-content">
+            <img
+                src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=80"
+                alt="Aloo Paratha"
+            >
 
-            <h2>Aloo Paratha</h2>
+            <div class="card-content">
 
-            <p>
-                A delicious Indian stuffed potato
-                flatbread that's crispy and flavorful.
-            </p>
+                <h2>Aloo Paratha</h2>
 
-            <a href="./aloo-paratha/" class="button">
-                View Recipe →
-            </a>
+                <p>
+                    A delicious Indian stuffed potato
+                    flatbread that's crispy and flavorful.
+                </p>
+
+                <a href="./aloo-paratha/" class="button">
+                    View Recipe →
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
-    <div class="card">
+        <!-- Masala Maggi -->
+        <div class="card">
 
-    <img
-        src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=800&q=80"
-        alt="Masala Maggi"
-    >
+            <img
+                src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=800&q=80"
+                alt="Masala Maggi"
+            >
 
-    <div class="card-content">
+            <div class="card-content">
 
-        <h2>Masala Maggi</h2>
+                <h2>Masala Maggi</h2>
 
-        <p>
-            Spicy and flavorful Indian-style Masala Maggi.
-        </p>
+                <p>
+                    Spicy and flavorful Indian-style
+                    Masala Maggi that's quick and delicious.
+                </p>
 
-        <a href="./masala-maggi/" class="button">
-            View Recipe →
-        </a>
+                <a href="./masala-maggi/" class="button">
+                    View Recipe →
+                </a>
 
-    </div>
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Recipe Collection</p>
+    </footer>
 
 </body>
 </html>
