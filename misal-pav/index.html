@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Misal Pav | Culinary Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spicy: '#E11D48',
+                        warm: '#F59E0B',
+                        fresh: '#10B981',
+                        dark: '#0F172A',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .recipe-card:hover { transform: translateY(-10px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    </style>
+</head>
+<body class="font-body text-slate-200 antialiased min-h-screen selection:bg-spicy selection:text-white">
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <header class="text-center mb-20">
+            <h1 class="font-display text-6xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-spicy via-orange-500 to-warm mb-6">
+                Misal Pav Artistry
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                Reimagining the legendary Maharashtrian classic through four distinct culinary lenses.
+            </p>
+        </header>
+
+        <!-- Ingredient Bento Grid -->
+        <section class="mb-24">
+            <h2 class="font-display text-3xl font-bold mb-8 text-white flex items-center gap-4">
+                <span class="w-8 h-8 bg-spicy rounded-full"></span> The Core Components
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="glass p-6 rounded-2xl">
+                    <span class="text-4xl mb-2 block">🌱</span>
+                    <h3 class="font-semibold text-white">Moth Beans</h3>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <span class="text-4xl mb-2 block">🍞</span>
+                    <h3 class="font-semibold text-white">Soft Pav</h3>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <span class="text-4xl mb-2 block">🍟</span>
+                    <h3 class="font-semibold text-white">Farsan</h3>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <span class="text-4xl mb-2 block">🧅</span>
+                    <h3 class="font-semibold text-white">Aromatics</h3>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <span class="text-4xl mb-2 block">🌶️</span>
+                    <h3 class="font-semibold text-white">Spices</h3>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <span class="text-4xl mb-2 block">🍋</span>
+                    <h3 class="font-semibold text-white">Garnish</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Cards -->
+        <section class="space-y-24">
+            <!-- 1. Classic -->
+            <article class="grid lg:grid-cols-2 gap-12 items-center recipe-card">
+                <div class="rounded-3xl overflow-hidden glass shadow-2xl h-96">
+                    <img src='https://opal.google/board/blobs/c4ee3370-1012-48ad-b426-6a378c3d66d7' alt='Classic Kolhapuri Misal' class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h2 class="font-display text-4xl font-bold mb-4 text-white">01. Classic Kolhapuri Misal</h2>
+                    <p class="text-slate-400 mb-6 italic text-lg">"A traditional, fiery moth bean sprout curry served with soft bread and crunchy toppings."</p>
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="font-bold text-spicy mb-2">Instructions:</h4>
+                        <ol class="list-decimal list-inside space-y-2 text-sm text-slate-300">
+                            <li>Pressure cook moth beans with turmeric/salt.</li>
+                            <li>Sauté mustard seeds, curry leaves, and aromatics.</li>
+                            <li>Develop flavor with tomato puree and Misal masala.</li>
+                            <li>Simmer until the "kat" (red oil) forms.</li>
+                            <li>Assemble with farsan, onions, and lemon.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2. Bruschetta -->
+            <article class="grid lg:grid-cols-2 gap-12 items-center recipe-card">
+                <div class="lg:order-2 rounded-3xl overflow-hidden glass shadow-2xl h-96">
+                    <img src='https://opal.google/board/blobs/b8d32146-e3c4-410a-8cc4-3550b18e3caf' alt='Misal Pav Bruschetta' class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h2 class="font-display text-4xl font-bold mb-4 text-white">02. Misal Pav Bruschetta</h2>
+                    <p class="text-slate-400 mb-6 italic text-lg">"A modern appetizer where toasted pav serves as a crisp base for a concentrated sprout topping."</p>
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="font-bold text-warm mb-2">Instructions:</h4>
+                        <ol class="list-decimal list-inside space-y-2 text-sm text-slate-300">
+                            <li>Sauté boiled sprouts with garam masala and chili.</li>
+                            <li>Butter and toast pav slices until dark gold.</li>
+                            <li>Top pav with sprout mixture.</li>
+                            <li>Garnish with raw onions, tomato, and farsan.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3. Salad -->
+            <article class="grid lg:grid-cols-2 gap-12 items-center recipe-card">
+                <div class="rounded-3xl overflow-hidden glass shadow-2xl h-96">
+                    <img src='https://opal.google/board/blobs/a6c918d8-6af2-4178-a42e-657cf0093d29' alt='Sprouted Salad' class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h2 class="font-display text-4xl font-bold mb-4 text-white">03. Matki & Farsan Salad</h2>
+                    <p class="text-slate-400 mb-6 italic text-lg">"A light, warm salad that highlights the textures of the ingredients without the heavy gravy."</p>
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="font-bold text-fresh mb-2">Instructions:</h4>
+                        <ol class="list-decimal list-inside space-y-2 text-sm text-slate-300">
+                            <li>Steam matki sprouts until tender.</li>
+                            <li>Flash fry with mustard seeds and green chilies.</li>
+                            <li>Combine with fresh tomatoes and cilantro.</li>
+                            <li>Fold in farsan and toasted pav croutons before serving.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 4. Sliders -->
+            <article class="grid lg:grid-cols-2 gap-12 items-center recipe-card">
+                <div class="lg:order-2 rounded-3xl overflow-hidden glass shadow-2xl h-96">
+                    <img src='https://opal.google/board/blobs/ec122196-69eb-4eec-ba95-46085b616f3a' alt='Cheesy Sliders' class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h2 class="font-display text-4xl font-bold mb-4 text-white">04. Cheesy Misal Sliders</h2>
+                    <p class="text-slate-400 mb-6 italic text-lg">"A decadent fusion snack where spicy sprouts and melted cheese are grilled inside the pav."</p>
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="font-bold text-spicy mb-2">Instructions:</h4>
+                        <ol class="list-decimal list-inside space-y-2 text-sm text-slate-300">
+                            <li>Prepare a thick, dry sprout filling.</li>
+                            <li>Layer inside slit pav with onions and farsan.</li>
+                            <li>Add generous grated cheese.</li>
+                            <li>Grill on a buttered tawa until golden and melted.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
