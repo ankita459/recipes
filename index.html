@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Collection</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f5f0;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            color: #666;
+        }
+
+        .recipes {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍴 My Recipe Collection</h1>
+    <p>Delicious recipes made simple</p>
+</header>
+
+<section class="recipes">
+
+    <div class="card">
+
+        <img src="aloo-paratha/aloo-paratha.jpg"
+             alt="Aloo Paratha">
+
+        <div class="card-content">
+
+            <h2>Aloo Paratha</h2>
+
+            <p>Delicious Indian stuffed potato flatbread.</p>
+
+            <a href="aloo-paratha/" class="button">
+                View Recipe →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
