@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer Tawa Collection | Premium Recipe Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spice: {
+                            saffron: '#FF9933',
+                            chili: '#E63946',
+                            curry: '#F4A261',
+                            charcoal: '#1A1A1A',
+                            surface: '#262626'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap');
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #FF9933, #E63946);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        body {
+            background-color: #0A0A0A;
+            color: #E5E5E5;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1A1A1A; }
+        ::-webkit-scrollbar-thumb { background: #404040; border-radius: 4px; }
+    </style>
+</head>
+<body class="font-body selection:bg-spice-saffron selection:text-white">
+
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        <!-- Hero Section -->
+        <header class="mb-20 text-center">
+            <h1 class="text-6xl md:text-8xl font-display font-bold mb-6 gradient-text tracking-tight">
+                Paneer Tawa
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto font-light">
+                An artisan collection of recipes celebrating the smoky, charred, and aromatic magic of the Indian Tawa.
+            </p>
+        </header>
+
+        <!-- Recipes Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Recipe 1 -->
+            <article class="glass rounded-3xl p-8 hover:scale-[1.02] transition-transform duration-500">
+                <img src='https://opal.google/board/blobs/ef6c92bb-bfc1-4a0e-a388-2b439aff6d20' alt='Classic Dhaba-Style Paneer Tawa Masala' class="w-full h-64 object-cover rounded-2xl mb-8 shadow-2xl" />
+                <h2 class="text-3xl font-display font-bold text-white mb-4">1. Classic Dhaba-Style Paneer Tawa Masala</h2>
+                <div class="space-y-6">
+                    <p class="text-gray-400">Focusing on a semi-dry, smoky gravy prepared on a flat griddle to caramelize the aromatics.</p>
+                    <div class="bg-black/20 p-6 rounded-xl">
+                        <h4 class="font-bold text-spice-saffron mb-3 uppercase tracking-wider text-sm">Ingredients</h4>
+                        <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+                            <li>300g Paneer cubes</li>
+                            <li>Butter/Ghee, Onion, Ginger-Garlic paste</li>
+                            <li>Tomatoes, Capsicum, Cumin</li>
+                            <li>Pav Bhaji Masala, Kasuri Methi, Cream</li>
+                        </ul>
+                    </div>
+                    <div class="text-sm leading-relaxed text-gray-300 space-y-2">
+                        <h4 class="font-bold text-spice-saffron uppercase tracking-wider text-sm mb-2">Method</h4>
+                        <p>1. Sauté cumin, onion, and aromatics until golden. 2. Mash tomatoes with spices. 3. Toss in paneer and capsicum. 4. Finish with cream and kasuri methi for the perfect char.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 2 -->
+            <article class="glass rounded-3xl p-8 hover:scale-[1.02] transition-transform duration-500">
+                <img src='https://opal.google/board/blobs/d2985678-bcbb-4d16-bcd6-d3e59c5897b8' alt='Smoky Tawa Paneer Tikka Sliders' class="w-full h-64 object-cover rounded-2xl mb-8 shadow-2xl" />
+                <h2 class="text-3xl font-display font-bold text-white mb-4">2. Smoky Tawa Paneer Tikka Sliders</h2>
+                <div class="space-y-6">
+                    <p class="text-gray-400">A fusion street-food take using marinated paneer seared on a griddle and served in buttered buns.</p>
+                    <div class="bg-black/20 p-6 rounded-xl">
+                        <h4 class="font-bold text-spice-saffron mb-3 uppercase tracking-wider text-sm">Ingredients</h4>
+                        <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+                            <li>250g Paneer slabs</li>
+                            <li>Hung curd, Besan, Tandoori Masala</li>
+                            <li>Slider buns, Mustard oil, Chaat Masala</li>
+                        </ul>
+                    </div>
+                    <div class="text-sm leading-relaxed text-gray-300 space-y-2">
+                        <h4 class="font-bold text-spice-saffron uppercase tracking-wider text-sm mb-2">Method</h4>
+                        <p>1. Marinate paneer in yogurt and spices. 2. Sear on hot tawa until charred. 3. Toast buttered buns on the same griddle. 4. Assemble with green chutney and onions.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 3 -->
+            <article class="glass rounded-3xl p-8 hover:scale-[1.02] transition-transform duration-500">
+                <img src='https://opal.google/board/blobs/b43c9fbd-406c-4817-95a8-23707c7f566d' alt='Paneer Tawa Pulao' class="w-full h-64 object-cover rounded-2xl mb-8 shadow-2xl" />
+                <h2 class="text-3xl font-display font-bold text-white mb-4">3. Paneer Tawa Pulao</h2>
+                <div class="space-y-6">
+                    <p class="text-gray-400">A fragrant, spicy rice dish where paneer and vegetables are tossed with pre-cooked rice on high heat.</p>
+                    <div class="bg-black/20 p-6 rounded-xl">
+                        <h4 class="font-bold text-spice-saffron mb-3 uppercase tracking-wider text-sm">Ingredients</h4>
+                        <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+                            <li>2 cups Basmati Rice</li>
+                            <li>150g Paneer cubes, Green peas, Carrot</li>
+                            <li>Pav Bhaji Masala, Fresh mint/coriander</li>
+                        </ul>
+                    </div>
+                    <div class="text-sm leading-relaxed text-gray-300 space-y-2">
+                        <h4 class="font-bold text-spice-saffron uppercase tracking-wider text-sm mb-2">Method</h4>
+                        <p>1. Sizzle spices and vegetables on high heat. 2. Toss in paneer and spice paste. 3. Gently fold in rice with mint and coriander. 4. Finish with lemon.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 4 -->
+            <article class="glass rounded-3xl p-8 hover:scale-[1.02] transition-transform duration-500">
+                <img src='https://opal.google/board/blobs/a76c9302-6fb8-46dd-8db0-2ca7f0e5893c' alt='Amritsari Paneer Khurchan' class="w-full h-64 object-cover rounded-2xl mb-8 shadow-2xl" />
+                <h2 class="text-3xl font-display font-bold text-white mb-4">4. Amritsari Paneer Khurchan</h2>
+                <div class="space-y-6">
+                    <p class="text-gray-400">"Khurchan" means "scraped." A technique involving scraping caramelized juices back into the dish.</p>
+                    <div class="bg-black/20 p-6 rounded-xl">
+                        <h4 class="font-bold text-spice-saffron mb-3 uppercase tracking-wider text-sm">Ingredients</h4>
+                        <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+                            <li>300g Paneer strips</li>
+                            <li>Mustard oil, Ajwain, Bell peppers</li>
+                            <li>Tomato ketchup, Garam masala, Cream</li>
+                        </ul>
+                    </div>
+                    <div class="text-sm leading-relaxed text-gray-300 space-y-2">
+                        <h4 class="font-bold text-spice-saffron uppercase tracking-wider text-sm mb-2">Method</h4>
+                        <p>1. Sauté aromatics and veggies. 2. Add paneer and let caramelize. 3. "Khurch" (scrape) the crust multiple times. 4. Drizzle with cream to emulsify.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
