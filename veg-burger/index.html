@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of the Veggie Patty | Culinary Explorations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#10b981',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; color: #f8fafc; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(to right, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .recipe-card:hover { transform: translateY(-5px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-white">
+
+    <!-- Header Section -->
+    <header class="py-16 px-6 text-center max-w-5xl mx-auto">
+        <h1 class="font-display text-5xl md:text-7xl font-extrabold mb-6 gradient-text">Beyond the Patty</h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">Elevating the humble veggie patty into gourmet culinary experiences. From classic comfort to Mediterranean vibrancy, discover the versatility of plant-forward cooking.</p>
+    </header>
+
+    <!-- Bento Grid Container -->
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            
+            <!-- Recipe 1 -->
+            <article class="glass rounded-[2rem] p-8 recipe-card overflow-hidden">
+                <img src='https://opal.google/board/blobs/b4811c2d-6ffd-4e19-8463-c25678aefbf2' alt='Toasted Brioche Garden Burger' class="w-full h-64 object-cover rounded-2xl mb-6 shadow-xl" />
+                <h2 class="font-display text-3xl font-bold mb-4">1. The Toasted Brioche Garden Burger</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-primary mb-2">Ingredients:</h3>
+                        <ul class="text-slate-300 text-sm list-disc list-inside space-y-1">
+                            <li>1 Veggie patty, 1 Brioche bun</li>
+                            <li>1 slice Sharp cheddar, 2 leaves Butter lettuce</li>
+                            <li>2 slices Large tomato, 3-4 thin Red onion slices</li>
+                            <li>3 Dill pickle chips, 1 tbsp Salted butter</li>
+                            <li>1 tbsp Mayo, 1 tsp Mustard, 1 tsp Ketchup</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-primary mb-2">Instructions:</h3>
+                        <ol class="text-slate-300 text-sm list-decimal list-inside space-y-2">
+                            <li>Toast bun halves in melted butter until golden.</li>
+                            <li>Pan-sear patty 4-5 mins per side; melt cheese on top.</li>
+                            <li>Spread condiments; layer greens, patty, and pickles.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 2 -->
+            <article class="glass rounded-[2rem] p-8 recipe-card overflow-hidden">
+                <img src='https://opal.google/board/blobs/ca8dc473-34b8-4c06-b684-23b0b06f32f4' alt='Mediterranean Harvest Grain Bowl' class="w-full h-64 object-cover rounded-2xl mb-6 shadow-xl" />
+                <h2 class="font-display text-3xl font-bold mb-4">2. Mediterranean Harvest Grain Bowl</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-secondary mb-2">Ingredients:</h3>
+                        <ul class="text-slate-300 text-sm list-disc list-inside space-y-1">
+                            <li>1 Veggie patty, 1 cup Quinoa/Brown rice</li>
+                            <li>2 cups Spinach, ½ cup Cherry tomatoes</li>
+                            <li>¼ cup Cucumber, 2 tbsp Feta, 5-6 Olives</li>
+                            <li>1 tbsp Hummus, 1 tbsp Olive oil, ½ Lemon</li>
+                            <li>Dried oregano, Salt, Pepper</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-secondary mb-2">Instructions:</h3>
+                        <ol class="text-slate-300 text-sm list-decimal list-inside space-y-2">
+                            <li>Crumble and sauté patty chunks until crispy.</li>
+                            <li>Whisk dressing with lemon, oil, and herbs.</li>
+                            <li>Arrange grains, greens, and veggies; top with patty, feta, and hummus.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 3 -->
+            <article class="glass rounded-[2rem] p-8 recipe-card overflow-hidden">
+                <img src='https://opal.google/board/blobs/25307175-6aaa-4acd-859a-a3cd4901c175' alt='Smoky Veggie Street Tacos' class="w-full h-64 object-cover rounded-2xl mb-6 shadow-xl" />
+                <h2 class="font-display text-3xl font-bold mb-4">3. Smoky Veggie Street Tacos</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-primary mb-2">Ingredients:</h3>
+                        <ul class="text-slate-300 text-sm list-disc list-inside space-y-1">
+                            <li>1 Veggie patty, 3 Tortillas</li>
+                            <li>1 cup Shredded cabbage, ½ Avocado</li>
+                            <li>Fresh cilantro, Lime wedges, Sour cream</li>
+                            <li>Chili powder, Cumin, Oil</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-primary mb-2">Instructions:</h3>
+                        <ol class="text-slate-300 text-sm list-decimal list-inside space-y-2">
+                            <li>Dice patty, sauté with chili and cumin.</li>
+                            <li>Whisk sour cream with lime and salt.</li>
+                            <li>Assemble tortillas with spiced patty, cabbage, avocado, and crema.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 4 -->
+            <article class="glass rounded-[2rem] p-8 recipe-card overflow-hidden">
+                <img src='https://opal.google/board/blobs/e94dc3f9-964c-49d9-8382-201f4b39117b' alt='Savory Veggie Patty & Potato Hash' class="w-full h-64 object-cover rounded-2xl mb-6 shadow-xl" />
+                <h2 class="font-display text-3xl font-bold mb-4">4. Savory Veggie Patty & Potato Hash</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-secondary mb-2">Ingredients:</h3>
+                        <ul class="text-slate-300 text-sm list-disc list-inside space-y-1">
+                            <li>1 Veggie patty, 1 Russet potato</li>
+                            <li>½ Bell pepper, ¼ Onion, 1 clove Garlic</li>
+                            <li>1 Egg, Smoked paprika, Olive oil</li>
+                            <li>Fresh parsley, Salt, Pepper</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-secondary mb-2">Instructions:</h3>
+                        <ol class="text-slate-300 text-sm list-decimal list-inside space-y-2">
+                            <li>Microwave potatoes, then brown in skillet.</li>
+                            <li>Add onion, peppers, and crumbled patty.</li>
+                            <li>Create well, add egg, cover until set. Garnish and serve.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="text-center py-12 text-slate-600 text-sm">
+        Culinary inspiration for the modern home cook.
+    </footer>
+
+</body>
+</html>
