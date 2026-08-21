@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Fusion: Modern Pav Bhaji Reinvented</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spice: '#ea580c',
+                        butter: '#f59e0b',
+                        cream: '#f8fafc',
+                        charcoal: '#0f172a'
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'system-ui', 'sans-serif'],
+                        body: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700&display=swap');
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #ea580c, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-slate-200 font-body selection:bg-spice selection:text-white">
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        
+        <!-- Hero Section -->
+        <header class="mb-20 text-center">
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 gradient-text">Spice Fusion</h1>
+            <p class="text-slate-400 max-w-2xl mx-auto text-lg">A modern culinary exploration of the iconic Indian street classic. Redefining Pav Bhaji through technique, texture, and global fusion.</p>
+        </header>
+
+        <!-- Ingredient Analysis Section -->
+        <section class="glass rounded-3xl p-8 mb-16 shadow-2xl border-l-4 border-l-spice">
+            <h2 class="font-display text-2xl font-bold mb-6 text-white flex items-center">
+                <span class="mr-3 text-spice">◈</span> Component Architecture
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
+                <div><h3 class="text-spice font-semibold mb-2">Vegetables</h3><p class="text-slate-400">Potatoes, peas, cauliflower, carrots, tomatoes, red onions.</p></div>
+                <div><h3 class="text-spice font-semibold mb-2">Aromatics</h3><p class="text-slate-400">Ginger, garlic, green chilies, fresh cilantro.</p></div>
+                <div><h3 class="text-spice font-semibold mb-2">Seasoning</h3><p class="text-slate-400">Pav Bhaji masala, Kashmiri chili, turmeric, cumin.</p></div>
+                <div><h3 class="text-spice font-semibold mb-2">Fats & Bread</h3><p class="text-slate-400">Unsalted butter, ghee, soft Pav rolls.</p></div>
+            </div>
+        </section>
+
+        <!-- Recipes Grid -->
+        <div class="grid lg:grid-cols-2 gap-10">
+            
+            <!-- Recipe 1 -->
+            <article class="glass rounded-3xl overflow-hidden card-hover">
+                <img src='https://opal.google/board/blobs/0231f048-2232-4a95-9786-9cc195fc9622' alt='Pav Bhaji Arancini' class="w-full h-64 object-cover" />
+                <div class="p-8">
+                    <h2 class="font-display text-3xl font-bold mb-4 text-white">Pav Bhaji Arancini</h2>
+                    <p class="mb-6 text-slate-400 leading-relaxed">Indian-Italian fusion: Spiced vegetable mash bound with rice, stuffed with molten cheese, and fried to golden perfection.</p>
+                    <details class="group">
+                        <summary class="cursor-pointer text-spice font-semibold list-none">View Method & Ingredients ↓</summary>
+                        <div class="mt-4 pt-4 border-t border-white/10 space-y-4 text-sm">
+                            <ul class="list-disc list-inside space-y-1 text-slate-300">
+                                <li>2 cups Pav Bhaji, 1 cup cooked rice</li>
+                                <li>Mozzarella cubes, Panko breadcrumbs</li>
+                                <li>Garlic-butter glaze</li>
+                            </ul>
+                            <p class="text-slate-400">Form balls with cheese centers, coat in cornstarch & Panko. Deep fry until golden. Toss in garlic-butter and cilantro.</p>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <!-- Recipe 2 -->
+            <article class="glass rounded-3xl overflow-hidden card-hover">
+                <img src='https://opal.google/board/blobs/0f5fb6db-a560-4358-b3fa-8768edab4c80' alt='Shepherd’s Pie' class="w-full h-64 object-cover" />
+                <div class="p-8">
+                    <h2 class="font-display text-3xl font-bold mb-4 text-white">Deconstructed Shepherd’s Pie</h2>
+                    <p class="mb-6 text-slate-400 leading-relaxed">A comforting casserole featuring a spicy vegetable base, buttery mash, and a crunchy Pav bread crust.</p>
+                    <details class="group">
+                        <summary class="cursor-pointer text-spice font-semibold list-none">View Method & Ingredients ↓</summary>
+                        <div class="mt-4 pt-4 border-t border-white/10 space-y-4 text-sm">
+                            <ul class="list-disc list-inside space-y-1 text-slate-300">
+                                <li>Base: Mixed veg, tomatoes, masala</li>
+                                <li>Topping: Mashed potato, butter, milk</li>
+                                <li>Crust: Torn Pav chunks, oregano</li>
+                            </ul>
+                            <p class="text-slate-400">Layer base and mash. Top with buttery Pav chunks. Bake at 400°F until bubbling.</p>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <!-- Recipe 3 -->
+            <article class="glass rounded-3xl overflow-hidden card-hover">
+                <img src='https://opal.google/board/blobs/21681e5e-0b47-4f39-b943-4900effcc682' alt='Masala Pav Quesadillas' class="w-full h-64 object-cover" />
+                <div class="p-8">
+                    <h2 class="font-display text-3xl font-bold mb-4 text-white">Masala Pav Quesadillas</h2>
+                    <p class="mb-6 text-slate-400 leading-relaxed">Crispy, cheesy tortilla-style wrap using flattened buns stuffed with the core Pav Bhaji flavors.</p>
+                    <details class="group">
+                        <summary class="cursor-pointer text-spice font-semibold list-none">View Method & Ingredients ↓</summary>
+                        <div class="mt-4 pt-4 border-t border-white/10 space-y-4 text-sm">
+                            <ul class="list-disc list-inside space-y-1 text-slate-300">
+                                <li>4 Pav buns (flattened)</li>
+                                <li>Prepared Pav Bhaji, Red onions</li>
+                                <li>Monterey Jack cheese, Mint chutney</li>
+                            </ul>
+                            <p class="text-slate-400">Toast flattened buns on griddle. Spread chutney/bhaji, fold with cheese. Press until extremely crunchy.</p>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <!-- Recipe 4 -->
+            <article class="glass rounded-3xl overflow-hidden card-hover">
+                <img src='https://opal.google/board/blobs/1b2b262a-2085-486c-b2c6-71c41cd78107' alt='Creamy Pav Bhaji Penne' class="w-full h-64 object-cover" />
+                <div class="p-8">
+                    <h2 class="font-display text-3xl font-bold mb-4 text-white">Creamy Pav Bhaji Penne</h2>
+                    <p class="mb-6 text-slate-400 leading-relaxed">A vibrant pasta dish where the traditional Bhaji is transformed into a rich, spiced cream sauce.</p>
+                    <details class="group">
+                        <summary class="cursor-pointer text-spice font-semibold list-none">View Method & Ingredients ↓</summary>
+                        <div class="mt-4 pt-4 border-t border-white/10 space-y-4 text-sm">
+                            <ul class="list-disc list-inside space-y-1 text-slate-300">
+                                <li>250g Penne, Heavy cream</li>
+                                <li>Pureed Pav Bhaji, Parmesan</li>
+                                <li>Kashmiri chili powder</li>
+                            </ul>
+                            <p class="text-slate-400">Sauté garlic, add pureed bhaji, stir in cream. Toss with penne and Parmesan for a luxurious finish.</p>
+                        </div>
+                    </details>
+                </div>
+            </article>
+        </div>
+
+    </main>
+
+</body>
+</html>
