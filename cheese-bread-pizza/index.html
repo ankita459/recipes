@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Cheesy Alchemy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: '#fbbf24',
+                        slate: {
+                            850: '#1a202c',
+                            950: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .recipe-card:hover .image-scale { transform: scale(1.05); }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold selection:text-slate-950">
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Header -->
+        <header class="mb-16 text-center">
+            <h1 class="font-display text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
+                Cheesy Alchemy
+            </h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                Transforming simple pantry staples into decadent, crispy, molten masterpieces. 
+                Your guide to elevated cheese-bread creations.
+            </p>
+        </header>
+
+        <!-- Analysis Section -->
+        <section class="glass rounded-3xl p-8 mb-16">
+            <h2 class="font-display text-2xl font-bold mb-6 text-amber-400">Ingredient Inventory</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border-l-2 border-amber-500 pl-4">
+                    <h3 class="font-semibold text-white mb-2">Starches</h3>
+                    <p class="text-sm text-slate-400">Italian bread, sourdough, pizza dough, baguette.</p>
+                </div>
+                <div class="border-l-2 border-amber-500 pl-4">
+                    <h3 class="font-semibold text-white mb-2">Cheeses</h3>
+                    <p class="text-sm text-slate-400">Mozzarella, Parmesan, Provolone, Monterey Jack, White Cheddar.</p>
+                </div>
+                <div class="border-l-2 border-amber-500 pl-4">
+                    <h3 class="font-semibold text-white mb-2">Sauces</h3>
+                    <p class="text-sm text-slate-400">Zesty marinara and thick pizza sauce.</p>
+                </div>
+                <div class="border-l-2 border-amber-500 pl-4">
+                    <h3 class="font-semibold text-white mb-2">Aromatics</h3>
+                    <p class="text-sm text-slate-400">Garlic, butter, olive oil, Italian herbs, spices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Recipe 1 -->
+            <article class="glass rounded-3xl overflow-hidden recipe-card flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src='https://opal.google/board/blobs/8bbea8f7-d426-4c12-af2e-d6da98600961' alt='Garlic Butter Crust Pizza Planks' class="w-full h-full object-cover transition-transform duration-700 image-scale" />
+                </div>
+                <div class="p-8">
+                    <h3 class="font-display text-2xl font-bold mb-4">Garlic Butter Crust Pizza Planks</h3>
+                    <div class="text-slate-300 text-sm space-y-4">
+                        <p>Elevate simple pizza bread into a textured delicacy with a double-toast method.</p>
+                        <h4 class="font-bold text-amber-400 uppercase tracking-wider text-xs">Method</h4>
+                        <ol class="list-decimal list-inside space-y-2 opacity-80">
+                            <li>Preheat to 400°F.</li>
+                            <li>Mix garlic butter and coat bread.</li>
+                            <li>Toast 5-7 mins.</li>
+                            <li>Top with sauce, cheeses, and flakes.</li>
+                            <li>Bake 10-12 mins, broil 1 min for char.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 2 -->
+            <article class="glass rounded-3xl overflow-hidden recipe-card flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src='https://opal.google/board/blobs/48139ab1-3177-4f8e-ba5f-fcad78561670' alt='Deep-Dish Pull-Apart Pizza Boule' class="w-full h-full object-cover transition-transform duration-700 image-scale" />
+                </div>
+                <div class="p-8">
+                    <h3 class="font-display text-2xl font-bold mb-4">Deep-Dish Pull-Apart Pizza Boule</h3>
+                    <div class="text-slate-300 text-sm space-y-4">
+                        <p>An interactive centerpiece, perfect for shared dining experiences.</p>
+                        <h4 class="font-bold text-amber-400 uppercase tracking-wider text-xs">Method</h4>
+                        <ol class="list-decimal list-inside space-y-2 opacity-80">
+                            <li>Cut 1-inch grid into sourdough boule.</li>
+                            <li>Drizzle sauce and stuff with cheese bits.</li>
+                            <li>Brush with seasoned butter mix.</li>
+                            <li>Foil-bake 15 mins, open-bake 10 mins.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 3 -->
+            <article class="glass rounded-3xl overflow-hidden recipe-card flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src='https://opal.google/board/blobs/69136c8a-80ba-435b-81cb-3b276021cabf' alt='Rustic Pizza-Stuffed Cheesy Braids' class="w-full h-full object-cover transition-transform duration-700 image-scale" />
+                </div>
+                <div class="p-8">
+                    <h3 class="font-display text-2xl font-bold mb-4">Rustic Pizza-Stuffed Cheesy Braids</h3>
+                    <div class="text-slate-300 text-sm space-y-4">
+                        <p>Refined presentation using dough ropes locked with classic pizza flavors.</p>
+                        <h4 class="font-bold text-amber-400 uppercase tracking-wider text-xs">Method</h4>
+                        <ol class="list-decimal list-inside space-y-2 opacity-80">
+                            <li>Roll dough into 10x15 rectangle.</li>
+                            <li>Fill, seal, and braid three ropes.</li>
+                            <li>Brush with egg wash and top with seasonings.</li>
+                            <li>Bake at 425°F for 18-22 minutes.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 4 -->
+            <article class="glass rounded-3xl overflow-hidden recipe-card flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src='https://opal.google/board/blobs/ca5477bc-b6e2-486f-8d65-f994292e71e4' alt='Upside-Down Skillet Cheese Bread Pizza' class="w-full h-full object-cover transition-transform duration-700 image-scale" />
+                </div>
+                <div class="p-8">
+                    <h3 class="font-display text-2xl font-bold mb-4">Upside-Down Skillet Cheese Bread Pizza</h3>
+                    <div class="text-slate-300 text-sm space-y-4">
+                        <p>Inspired by Detroit-style, featuring a caramelized "frico" cheese crust.</p>
+                        <h4 class="font-bold text-amber-400 uppercase tracking-wider text-xs">Method</h4>
+                        <ol class="list-decimal list-inside space-y-2 opacity-80">
+                            <li>Layer cheese in cast iron skillet.</li>
+                            <li>Top with sauce, bread slices, and herbs.</li>
+                            <li>Stovetop heat (3 mins), then oven bake (15 mins).</li>
+                            <li>Flip to expose the crispy cheese.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+</body>
+</html>
