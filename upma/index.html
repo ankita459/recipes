@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upma Revival: Culinary Alchemy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amber: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' },
+                        slate: { 950: '#020617' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Outfit', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700&display=swap');
+        
+        .glass {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        body {
+            background-color: #020617;
+            color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+
+    <main class="max-w-6xl mx-auto space-y-12">
+        <!-- Hero Section -->
+        <header class="text-center space-y-4 pt-10">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+                Upma Revival
+            </h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">Transform your humble leftover Upma into a gourmet masterpiece with these four creative culinary concepts.</p>
+        </header>
+
+        <!-- Fridge Analysis -->
+        <section class="glass rounded-3xl p-8 border-l-4 border-amber-500">
+            <h2 class="text-2xl font-serif mb-6 text-amber-400">Fridge Content Analysis</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-bold mb-2 uppercase tracking-widest text-xs text-slate-500">The Base Ingredients</h3>
+                    <p class="text-slate-200">Roasted Semolina (Sooji/Rava), Onions, Carrots, Green Peas, Green Chilies, Ginger, Mustard seeds, Cumin seeds, Urad dal, Chana dal, Curry leaves, Turmeric, Salt, Ghee, Fresh Cilantro, Lemon juice.</p>
+                </div>
+                <div class="bg-black/20 p-6 rounded-2xl">
+                    <h3 class="font-bold mb-2 uppercase tracking-widest text-xs text-amber-500">Chef's Philosophy</h3>
+                    <p class="text-slate-300 italic">"Upma is a textured canvas. By integrating binding agents like potato or rice flour, we unlock textures ranging from crispy cutlets to hearty flatbreads."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipes Grid -->
+        <section class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Recipe 1 -->
+            <article class="glass rounded-3xl overflow-hidden card-hover">
+                <img src='https://opal.google/board/blobs/d70aec9a-6229-42a4-ad05-5c87d994f5e6' alt='Crispy Upma Cutlets' class="w-full h-64 object-cover opacity-80" />
+                <div class="p-6 space-y-4">
+                    <h3 class="text-3xl font-serif text-amber-400">1. Crispy Upma Cutlets</h3>
+                    <p class="text-slate-300">A savory, golden snack that transforms soft upma into crunchy patties.</p>
+                    <div class="text-sm text-slate-400 space-y-2">
+                        <p><strong class="text-white">Ingredients:</strong> 2 cups Upma, 2 boiled potatoes, 1/4 cup breadcrumbs, garam masala, chili powder, cilantro, cornstarch slurry.</p>
+                        <p><strong class="text-white">Instructions:</strong> Combine base, shape into patties, coat in slurry/crumbs, and shallow fry until golden.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 2 -->
+            <article class="glass rounded-3xl overflow-hidden card-hover">
+                <img src='https://opal.google/board/blobs/aad34232-5921-462f-832d-b84bbec5ed53' alt='Cheesy Upma Sandwich' class="w-full h-64 object-cover opacity-80" />
+                <div class="p-6 space-y-4">
+                    <h3 class="text-3xl font-serif text-amber-400">2. Cheesy Upma Sandwich</h3>
+                    <p class="text-slate-300">A quick and comforting breakfast twist using upma as a savory sandwich filling.</p>
+                    <div class="text-sm text-slate-400 space-y-2">
+                        <p><strong class="text-white">Ingredients:</strong> 1 cup Upma, 4 slices bread, cheddar cheese, green chutney, chaat masala, butter.</p>
+                        <p><strong class="text-white">Instructions:</strong> Spread chutney and upma on bread, layer with cheese, toast until crisp and melted.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 3 -->
+            <article class="glass rounded-3xl overflow-hidden card-hover">
+                <img src='https://opal.google/board/blobs/ed1da567-5ae6-49f9-b456-df34f7431f7c' alt='Golden Upma Masala Balls' class="w-full h-64 object-cover opacity-80" />
+                <div class="p-6 space-y-4">
+                    <h3 class="text-3xl font-serif text-amber-400">3. Golden Upma Masala Balls</h3>
+                    <p class="text-slate-300">Bite-sized, crunchy treats perfect for an evening snack.</p>
+                    <div class="text-sm text-slate-400 space-y-2">
+                        <p><strong class="text-white">Ingredients:</strong> 2 cups Upma, 1/2 cup rice flour, onions, ginger-garlic paste, chili flakes, curry leaves.</p>
+                        <p><strong class="text-white">Instructions:</strong> Mix ingredients, roll into balls, and cook in an Appe pan or deep fry for maximum crunch.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 4 -->
+            <article class="glass rounded-3xl overflow-hidden card-hover">
+                <img src='https://opal.google/board/blobs/97a669fa-d443-4e62-8cb9-74ba0de8be90' alt='Upma Stuffed Paratha' class="w-full h-64 object-cover opacity-80" />
+                <div class="p-6 space-y-4">
+                    <h3 class="text-3xl font-serif text-amber-400">4. Upma Stuffed Paratha</h3>
+                    <p class="text-slate-300">A hearty, filling flatbread where upma serves as a spicy, pre-cooked stuffing.</p>
+                    <div class="text-sm text-slate-400 space-y-2">
+                        <p><strong class="text-white">Ingredients:</strong> 1.5 cups Upma, 2 cups wheat flour, carom seeds, amchur powder, ghee.</p>
+                        <p><strong class="text-white">Instructions:</strong> Prepare dough, stuff with seasoned upma, roll flat and sear on a hot tawa with ghee.</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+</html>
