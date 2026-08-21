@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosa Atelier | Culinary Modernism</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dosaGold: '#f59e0b',
+                        dosaDark: '#0f172a',
+                        dosaCard: '#1e293b',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap');
+        
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .recipe-card:hover img {
+            transform: scale(1.05);
+            transition: transform 0.5s ease;
+        }
+        body {
+            background-color: #020617;
+            color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="font-body antialiased">
+
+    <!-- Header Section -->
+    <header class="py-20 px-6 text-center">
+        <h1 class="text-6xl md:text-8xl font-display font-black tracking-tighter mb-6 gradient-text uppercase italic">Dosa Atelier</h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">A premium collection of culinary artistry reimagining the classic Masala Dosa through modern innovation.</p>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        
+        <!-- Recipe Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            
+            <!-- Recipe 1 -->
+            <div class="recipe-card group overflow-hidden rounded-3xl glass p-6 transition-all hover:border-dosaGold">
+                <div class="overflow-hidden rounded-2xl mb-6">
+                    <img src='https://opal.google/board/blobs/efe89f4e-8e2c-49e1-8c46-cbf661a43fd1' alt='Classic Golden Masala Dosa' class="w-full h-64 object-cover transform duration-500" />
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-4 text-white">Classic Golden Masala Dosa</h2>
+                <div class="space-y-4 text-slate-300">
+                    <div>
+                        <h4 class="text-dosaGold font-semibold uppercase tracking-widest text-sm">Ingredients</h4>
+                        <p class="text-sm">Batter: 3 cups fermented rice/lentil batter, salt, water. Potato Masala: 4 boiled potatoes, 2 onions, 3 green chillies, mustard seeds, turmeric, curry leaves, oil/ghee.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-dosaGold font-semibold uppercase tracking-widest text-sm">Method</h4>
+                        <ol class="text-sm list-decimal list-inside space-y-1">
+                            <li>Sauté spices and aromatics; add potatoes.</li>
+                            <li>Spread thin batter on hot tawa.</li>
+                            <li>Fry with ghee until crispy; fill and fold.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 2 -->
+            <div class="recipe-card group overflow-hidden rounded-3xl glass p-6 transition-all hover:border-dosaGold">
+                <div class="overflow-hidden rounded-2xl mb-6">
+                    <img src='https://opal.google/board/blobs/126f50b9-c01d-4b1e-8313-49a6c28597d0' alt='Masala Dosa Fusion Pizza' class="w-full h-64 object-cover transform duration-500" />
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-4 text-white">Masala Dosa Fusion Pizza</h2>
+                <div class="space-y-4 text-slate-300">
+                    <div>
+                        <h4 class="text-dosaGold font-semibold uppercase tracking-widest text-sm">Ingredients</h4>
+                        <p class="text-sm">Base: 1.5 cups thick fermented batter. Toppings: 1 cup potato masala, onions, 1 cup mozzarella, tomato chutney, mustard seeds, curry leaves.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-dosaGold font-semibold uppercase tracking-widest text-sm">Method</h4>
+                        <ol class="text-sm list-decimal list-inside space-y-1">
+                            <li>Cook base thick; spread chutney.</li>
+                            <li>Layer masala, onions, and cheese.</li>
+                            <li>Cover and steam until cheese melts; temper with mustard/curry leaves.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 3 -->
+            <div class="recipe-card group overflow-hidden rounded-3xl glass p-6 transition-all hover:border-dosaGold">
+                <div class="overflow-hidden rounded-2xl mb-6">
+                    <img src='https://opal.google/board/blobs/b393b791-42e4-48f1-976c-fc8647a3dda1' alt='Spicy Potato Dosa Rolls' class="w-full h-64 object-cover transform duration-500" />
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-4 text-white">Spicy Potato Dosa Rolls</h2>
+                <div class="space-y-4 text-slate-300">
+                    <div>
+                        <h4 class="text-dosaGold font-semibold uppercase tracking-widest text-sm">Ingredients</h4>
+                        <p class="text-sm">Dosa: 2 cups batter, ghee. Filling: 1.5 cups potato masala, 1 tbsp red chili garlic chutney, 0.5 cup carrots, onions, curry leaves.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-dosaGold font-semibold uppercase tracking-widest text-sm">Method</h4>
+                        <ol class="text-sm list-decimal list-inside space-y-1">
+                            <li>Incorporate chutney into potato mix.</li>
+                            <li>Make extra crispy dosa; spread fillings.</li>
+                            <li>Roll tightly and slice diagonally.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 4 -->
+            <div class="recipe-card group overflow-hidden rounded-3xl glass p-6 transition-all hover:border-dosaGold">
+                <div class="overflow-hidden rounded-2xl mb-6">
+                    <img src='https://opal.google/board/blobs/b4b6ef71-649a-44f5-8a53-8813aa228e8e' alt='Crispy Masala Dosa Waffles' class="w-full h-64 object-cover transform duration-500" />
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-4 text-white">Crispy Masala Dosa Waffles</h2>
+                <div class="space-y-4 text-slate-300">
+                    <div>
+                        <h4 class="text-dosaGold font-semibold uppercase tracking-widest text-sm">Ingredients</h4>
+                        <p class="text-sm">Batter: 2 cups thick batter, onions, green chillies. Core: 1 cup mashed potato masala, mustard seeds, curry leaves, cooking spray.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-dosaGold font-semibold uppercase tracking-widest text-sm">Method</h4>
+                        <ol class="text-sm list-decimal list-inside space-y-1">
+                            <li>Preheat waffle iron; mix aromatics in batter.</li>
+                            <li>Sandwich potato patty between batter layers.</li>
+                            <li>Cook 5-7 mins; garnish with infused oil.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
