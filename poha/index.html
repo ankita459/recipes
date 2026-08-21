@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poha Mastery | Premium Recipe Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amber: { 500: '#f59e0b', 600: '#d97706' },
+                        slate: { 900: '#0f172a', 800: '#1e293b' }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .recipe-card:hover .img-scale { transform: scale(1.05); }
+        body { background-color: #0f172a; color: #f1f5f9; }
+    </style>
+</head>
+<body class="min-h-screen py-12 px-4 md:px-8">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-serif text-amber-500 mb-4 tracking-tight">Poha Mastery</h1>
+            <p class="text-slate-400 text-lg md:text-xl font-light italic">A curated collection of traditional and modern flattened rice delicacies.</p>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Recipe 1 -->
+            <article class="glass rounded-3xl overflow-hidden p-6 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-900/10 recipe-card">
+                <div class="overflow-hidden rounded-2xl h-64 mb-6">
+                    <img src='https://opal.google/board/blobs/9df38cf3-0052-493f-9dec-bbfc71f3f674' alt='Classic Maharashtrian Kanda Batata Poha' class="w-full h-full object-cover transition-transform duration-700 img-scale" />
+                </div>
+                <h2 class="text-3xl font-serif text-white mb-2">Classic Kanda Batata Poha</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">A traditional savory breakfast dish featuring tempered flattened rice with onions and potatoes.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-amber-500 font-semibold mb-2 uppercase tracking-widest text-sm">Ingredients</h4>
+                        <ul class="text-sm space-y-1 text-slate-300">
+                            <li>• 2 cups Thick Poha</li>
+                            <li>• 1 medium Onion</li>
+                            <li>• 1 medium Potato</li>
+                            <li>• 1/4 cup Raw Peanuts</li>
+                            <li>• 1 tsp Mustard Seeds</li>
+                            <li>• 1 tsp Cumin Seeds</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-amber-500 font-semibold mb-2 uppercase tracking-widest text-sm">Instructions</h4>
+                        <p class="text-sm text-slate-300 leading-relaxed">Rinse poha and let rest. Heat oil, fry peanuts, temper mustard/cumin/curry leaves. Sauté potatoes and onions. Combine, steam for 2 mins, and garnish with lemon, cilantro, and sev.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 2 -->
+            <article class="glass rounded-3xl overflow-hidden p-6 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-900/10 recipe-card">
+                <div class="overflow-hidden rounded-2xl h-64 mb-6">
+                    <img src='https://opal.google/board/blobs/81cf10d0-1928-4a25-8eb6-3ae1cdae5df3' alt='Crispy Poha Veggie Cutlets' class="w-full h-full object-cover transition-transform duration-700 img-scale" />
+                </div>
+                <h2 class="text-3xl font-serif text-white mb-2">Crispy Poha Veggie Cutlets</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">A crunchy, shallow-fried snack made by binding poha with mashed vegetables and aromatic spices.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-amber-500 font-semibold mb-2 uppercase tracking-widest text-sm">Ingredients</h4>
+                        <ul class="text-sm space-y-1 text-slate-300">
+                            <li>• 1 cup Thick Poha</li>
+                            <li>• 2 Potatoes, boiled</li>
+                            <li>• 1/2 cup Mixed Veggies</li>
+                            <li>• 1 tsp Ginger-Garlic paste</li>
+                            <li>• 1/2 tsp Garam Masala</li>
+                            <li>• 2 tbsp Cornstarch</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-amber-500 font-semibold mb-2 uppercase tracking-widest text-sm">Instructions</h4>
+                        <p class="text-sm text-slate-300 leading-relaxed">Soften poha, mash with potatoes and vegetables. Add spices and binding agents. Shape into patties and shallow fry until deep golden brown. Serve hot.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 3 -->
+            <article class="glass rounded-3xl overflow-hidden p-6 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-900/10 recipe-card">
+                <div class="overflow-hidden rounded-2xl h-64 mb-6">
+                    <img src='https://opal.google/board/blobs/1c8785a9-922e-4a1d-be33-a84f0c0b6f67' alt='Roasted Poha Chivda' class="w-full h-full object-cover transition-transform duration-700 img-scale" />
+                </div>
+                <h2 class="text-3xl font-serif text-white mb-2">Roasted Poha Chivda</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">A crunchy, shelf-stable snack made by roasting thin flattened rice with nuts and spices.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-amber-500 font-semibold mb-2 uppercase tracking-widest text-sm">Ingredients</h4>
+                        <ul class="text-sm space-y-1 text-slate-300">
+                            <li>• 3 cups Thin Poha</li>
+                            <li>• 1/2 cup Peanuts</li>
+                            <li>• 1/4 cup Roasted Gram</li>
+                            <li>• 15 Cashews</li>
+                            <li>• 1/2 tsp Turmeric</li>
+                            <li>• 1 tbsp Powdered Sugar</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-amber-500 font-semibold mb-2 uppercase tracking-widest text-sm">Instructions</h4>
+                        <p class="text-sm text-slate-300 leading-relaxed">Dry roast poha. Fry nuts, coconut, and spices in oil. Combine everything, toss gently to coat, and cool completely for maximum crunch.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 4 -->
+            <article class="glass rounded-3xl overflow-hidden p-6 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-900/10 recipe-card">
+                <div class="overflow-hidden rounded-2xl h-64 mb-6">
+                    <img src='https://opal.google/board/blobs/de8af807-62fb-4b4b-94b7-cd21838aa46f' alt='Vella Poha' class="w-full h-full object-cover transition-transform duration-700 img-scale" />
+                </div>
+                <h2 class="text-3xl font-serif text-white mb-2">Vella Poha</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">A quick-fix dessert or sweet snack utilizing flattened rice, unrefined cane sugar, and cardamom.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-amber-500 font-semibold mb-2 uppercase tracking-widest text-sm">Ingredients</h4>
+                        <ul class="text-sm space-y-1 text-slate-300">
+                            <li>• 1.5 cups Poha</li>
+                            <li>• 1/2 cup Jaggery</li>
+                            <li>• 1/2 cup Fresh Coconut</li>
+                            <li>• 1/4 tsp Cardamom</li>
+                            <li>• 1 tbsp Ghee</li>
+                            <li>• 1 tbsp Cashews & Raisins</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-amber-500 font-semibold mb-2 uppercase tracking-widest text-sm">Instructions</h4>
+                        <p class="text-sm text-slate-300 leading-relaxed">Soften poha. Mix with jaggery and coconut. Temper cashews and raisins in ghee and fold into the mixture. Serve as a quick sweet treat.</p>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+</body>
+</html>
